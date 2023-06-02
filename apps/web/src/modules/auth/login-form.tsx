@@ -6,6 +6,7 @@ import { object, string } from 'zod';
 import { Form, useZodForm } from '../../components/ui/form/Form';
 import { Input } from '../../components/ui/input';
 import { Button } from '../../components/ui/button/Button';
+import { PasswordInput } from '../../components/ui/input/InputPassword';
 
 
 const newUserSchema = object({
@@ -87,14 +88,14 @@ export const LoginForm: FC<LoginFormProps> = ({ isModal = false }) => {
       <Input
         label="Email"
         type="text"
-        placeholder="gavin"
+        placeholder="Email"
         {...form.register('email')}
       />
 
-      <Input
+      <PasswordInput
         label="Password"
         type="password"
-        placeholder="gavin"
+        placeholder="Password"
         {...form.register('password')}
       />
 
@@ -114,7 +115,7 @@ export const LoginForm: FC<LoginFormProps> = ({ isModal = false }) => {
 
 export default function LoginView() {
   return (
-    <div className="flex h-full min-h-screen w-screen flex-col justify-center !bg-white py-6 px-5 sm:p-8  md:h-auto md:min-h-0 md:max-w-[480px] md:rounded-xl">
+    <div className="flex h-full min-h-screen w-screen flex-col justify-center !bg-white py-6 px-5 sm:p-8  md:h-auto md:min-h-0 md:max-w-[480px] md:rounded-xl shadow-400">
       <LoginForm />
     </div>
   );

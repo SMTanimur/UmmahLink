@@ -6,18 +6,18 @@ const baseURL = 'https:fkdfsdk';
 export const defaultMetadata = {
   metadataBase: new URL(baseURL),
   title: {
-    default: 'Family-daily  - share your family moments',
-    template: '%s |family-daily ',
+    default: 'UmmahLink  - Islamic Social Media Platform',
+    template: '%s | Aafiyah',
   },
   description:
-    'Family-daily is a e-commerce area for family to share their family moments and buy some family products.',
+    'UmmahLink is a social media platform for Muslims to connect with other Muslims, share Islamic knowledge, and find Islamic resources.',
   keywords: metaKeywords.join(', '),
   creator: 'SM Tanimur Rahman',
   publisher: 'SM Tanimur Rahman',
-  applicationName: 'Family-daily ',
+  applicationName: 'UmmahLink ',
   viewport: 'width=device-width, initial-scale=1.0',
   colorScheme: 'light',
-  category: 'e-commerce',
+  category: 'Islamic Social Media Platform',
   robots: {
     index: false,
     follow: true,
@@ -47,16 +47,16 @@ export const defaultMetadata = {
     type: 'website',
     locale: 'en_US',
     url: baseURL,
-    siteName: 'family-daily',
-    title: 'family-daily - e-shop for family',
+    siteName: 'UmmahLink',
+    title: 'UmmahLink - Islamic Social Media Platform',
     description:
-      'family-daily is a e-commerce area for family to share their family moments and buy some family products.',
+      'UmmahLink is a social media platform for Muslims to connect with other Muslims, share Islamic knowledge, and find Islamic resources.',
     images: [
       {
         url: `${baseURL}/images/seo_image.png`,
         width: 800,
         height: 600,
-        alt: 'family-daily - shop for family',
+        alt: 'UmmahLink - Islamic Social Media Platform',
       },
     ],
     emails: ['mushfiqurtanim@gmail.com'],
@@ -69,17 +69,17 @@ export const defaultMetadata = {
   // },
   twitter: {
     creator: '@smtanimur',
-    site: '@family-daily',
+    site: '@ummahlink',
     card: 'summary_large_image',
-    title: 'family-daily - e-shop for family',
+    title: 'UmmahLink - Islamic Social Media Platform',
     description:
-      'family-daily is a e-commerce area for family to share their family moments and buy some family products.',
+      'UmmahLink is a social media platform for Muslims to connect with other Muslims, share Islamic knowledge, and find Islamic resources.',
     images: [
       {
         url: `${baseURL}/images/seo_image.png`,
         width: 800,
         height: 600,
-        alt: 'family-daily - shop for family',
+        alt: 'UmmahLink - Islamic Social Media Platform',
       },
     ],
   },

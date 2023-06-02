@@ -1,12 +1,16 @@
+import LoginView from "../modules/auth/login-form";
 
 
 export default async function Index() {
 
   return (
-    <div className="container mx-auto">
-       <h1 className='text-green-500 '>
-    hello world
-       </h1>
+    <div className="container mx-auto h-screen ">
+      <h1>hello</h1>
+      <div className="flex justify-center items-center h-full">
+       
+
+      <LoginView/>
+      </div>
     </div>
   );
 }
