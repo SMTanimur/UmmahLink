@@ -4,7 +4,39 @@ import mongoose, { Document, Types } from 'mongoose';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import { IsEmail, IsNotEmpty, IsOptional, IsString, MinLength } from 'class-validator';
 
+export enum EGender {
+  male = 'male',
+  female = 'female',
+  unspecified = 'unspecified'
+}
 
+
+
+export interface InfoDocument
+  extends Document,
+    mongoose.Types.Subdocument,
+    Info {}
+
+@Schema()
+export class Info {
+ @Prop()
+ @IsOptional()
+ @IsString()
+ @ApiPropertyOptional()
+ bio?: string;
+
+  @Prop()
+  @IsOptional()
+  @ApiPropertyOptional()
+  birthday?: Date
+ 
+  @IsOptional()
+  @ApiPropertyOptional()
+  @Prop({enum:EGender}) 
+  gender?: EGender
+}
+
+export const InfoSchema = SchemaFactory.createForClass(Info);
 @Schema({ timestamps: true })
 export class User {
   @Prop()
@@ -27,7 +59,11 @@ export class User {
   @ApiProperty()
   @MinLength(6)
   password: string;
-  
+
+  @Prop({ type: InfoSchema })
+  @IsOptional()
+  @ApiPropertyOptional()
+  info?: Info;
   
   @Prop({ type: mongoose.Types.ObjectId, ref: 'User' })
   @IsOptional()

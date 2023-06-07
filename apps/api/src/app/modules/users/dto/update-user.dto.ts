@@ -3,9 +3,10 @@ import { IsMongoId } from 'class-validator';
 import { CreateUserDto } from './create-user-input';
 
 
-export class UpdateUserDto extends PartialType(CreateUserDto) {
+export class UpdateUserDto extends PartialType (CreateUserDto) {
   @IsMongoId()
   _id: string;
+
 }
 export class BanUserDto {
 
