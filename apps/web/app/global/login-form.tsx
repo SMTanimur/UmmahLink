@@ -1,13 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
-'use client';
+"use client"
 
-import { FC, useState } from 'react';
+import { FC } from 'react';
 import { object, string } from 'zod';
-import { Form, useZodForm } from '../../components/ui/form/Form';
-import { Input } from '../../components/ui/input';
-import { Button } from '../../components/ui/button/Button';
-import { PasswordInput } from '../../components/ui/input/InputPassword';
-
+import { Form, useZodForm } from '../components/ui/form/Form';
+import { Input } from '../components/ui/input';
+import { PasswordInput } from '../components/ui/input/InputPassword';
+import { Button } from '../components/ui/button/Button';
 
 const newUserSchema = object({
   email: string()

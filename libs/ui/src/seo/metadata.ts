@@ -7,7 +7,7 @@ export const defaultMetadata = {
   metadataBase: new URL(baseURL),
   title: {
     default: 'UmmahLink  - Islamic Social Media Platform',
-    template: '%s | Aafiyah',
+    template: 'UmmahLink  | %s',
   },
   description:
     'UmmahLink is a social media platform for Muslims to connect with other Muslims, share Islamic knowledge, and find Islamic resources.',

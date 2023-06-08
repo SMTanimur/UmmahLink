@@ -1,6 +1,7 @@
 const { createGlobPatternsForDependencies } = require('@nx/react/tailwind');
 const { join } = require('path');
 const colors = require('tailwindcss/colors');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -26,7 +27,8 @@ module.exports = {
         '10px': '0.625rem',
       },
       colors: {
-
+        "seafoam" : "#C9EEBE",
+        "champange" : "#F7EDE3",
         brand: colors.emerald,
         social: {
           facebook: '#3b5998',

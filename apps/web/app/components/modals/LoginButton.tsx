@@ -1,9 +1,7 @@
-
+"use client"
 import type { FC } from 'react';
 import {  useGlobalModalStateStore} from '~ui';
 import { Button } from '../ui/button/Button';
-
-
 
 
 export const LoginButton: FC = () => {
